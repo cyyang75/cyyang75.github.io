@@ -1,46 +1,60 @@
----
-layout: page
-description: "「Cybersecurity Analyst」"
----
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
+<div class="container">
+<hr>  
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/172286674" alt="photo"/>
+  </p>
+<hr>  
+<h3>Hi, I'm Chuanyi Yang, a Cybersecurity Analyst and IT Professional.👨‍💻</h3>
+<br />
+
+<h4>I am actively seeking an entry-level position in cybersecurity, such as Cybersecurity Analyst, SOC Analyst, or Cyber Incident Responder, where I can apply my cybersecurity knowledge and skills.</h4>
+<br />
+<h4>I hold a B.S. degree in Cybersecurity and several related certifications. Over the years, I have gained extensive and in-depth hands-on lab experience through various online platforms and my own home labs, practicing and developing my skills with industry-standard tools and techniques for security analysis, SOC operations, and incident handling. </h4>
+<br />
+<h4>I am certified by:</h4>
+<p align="center">
+<img src="https://i.imgur.com/h3EZJ2K.png" alt="My Certifications"/>
+</p>
+
 <hr>
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<h4>Hands-on lab experiences are crucial for cybersecurity professionals as they bridge the gap between theoretical knowledge and real-world application. Below are some projects and lab experiences I have completed or am currently working on. These labs provide me with opportunities to work directly with tools, techniques, and scenarios commonly encountered in the field:</h4>
+<br />
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/aci-practice-labs" target="_blank">ACI Learning Practice Labs</a></u> (16 labs <span style="font-size: smaller;">on Computer Networking, Network Security, and System and Communication Security</span>)</h4>
+<br />  
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/infosec-learning-labs" target="_blank">InfoSec Learning Labs</a></u> (19 labs <span style="font-size: smaller;">on Operating System Security and Network Defense</span>)</h4>
+<br />
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/comptia-certmaster-labs-for-security" target="_blank">CompTIA CertMaster Labs for Security+ (Exam SY0-701)</a></u>: 37 labs</h4>
+<br />  
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/comptia-certmaster-labs-for-cysa" target="_blank">CompTIA CertMaster Labs for CySA+ (Exam CS0-003)</a></u>: 33 labs</h4>
+<br />  
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/hackthebox-cdsa" target="_blank">Hack The Box (HTB) SOC Analyst Path Labs</a></u> (15 modules)</h4>
+<br />  
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/hacksplaining-web-application-security" target="_blank">Hacksplaining Web Application Security</a></u>: (39 lessons)</h4>
+<br />  
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/metasploit-free-online-ethical-hacking-course" target="_blank">Metasploit Free Online Ethical Hacking Course</a></u></h4>
+<br />  
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• &nbsp;<u><a href="https://github.com/cyyang75/my-homelabs" target="_blank">My Cybersecurity Homelabs</a></u></h4>
+
+<br />  
+
+<h4>As I continue studying and working in the field of cybersecurity, my list of lab experiences will keep growing, along with my skills and expertise.</h4>
+
+<hr>  
+
+<h3>🤳Connect with me:</h3>
+<a href="https://www.linkedin.com/in/chuanyi-yang" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin" alt="LinkedIn">
+</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/cyyang75" target="_blank">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width:50px;height:50px;">
+</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.facebook.com/chuanyi.yang.75" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
+</a>
+<br />    
+  
+<hr>  
+</div>
